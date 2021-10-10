@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DS Perera</title>
+    <style>
+      h1 {
+        color: white;
+        text-align: center;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        font-size: 120px;
+        opacity: 50%;
+        transition: color 2s;
+        transition: font-size 1s;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1:hover {
+        color: yellow;
+        opacity: 100%;
+        transition-timing-function: ease;
+        font-size: 170px;
+        margin-bottom: 3%;
+      }
+      .box {
+        background-color: black;
+        background-image: url("bike1.jpj");
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 23%;
+        height: 20vmin;
+        border: 0.5vmin solid;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        /* transition: 0.3s; */
+      }
+      .box:hover {
+        width: 24%;
+        margin-left: 3%;
+        margin-right: 5%;
+        height: 24vmin;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        opacity: 1;
+        border-image: linear-gradient(to right, red, rgb(25, 0, 255)) 1;
+      }
+      img {
+        opacity: 0.4;
+      }
+      img:hover {
+        opacity: 1;
+      }
+
+      #i1 {
+        border-image: linear-gradient(
+            to right,
+            rgb(23, 0, 128),
+            rgb(0, 255, 213)
+          )
+          1;
+        opacity: 0.7;
+      }
+      #i2 {
+        border-image: linear-gradient(
+            to right,
+            rgb(255, 0, 0),
+            rgb(255, 208, 0)
+          )
+          1;
+        opacity: 0.7;
+      }
+      #i3 {
+        border-image: linear-gradient(
+            to right,
+            rgb(255, 0, 157),
+            rgb(0, 183, 255)
+          )
+          1;
+        opacity: 0.7;
+      }
+      #i4 {
+        border-image: linear-gradient(to right, green, yellow) 1;
+        opacity: 0.7;
+      }
+      #i4:hover {
+        border-image: linear-gradient(
+            to right,
+            rgb(23, 0, 128),
+            rgb(0, 255, 213)
+          )
+          1;
+        opacity: 1;
+      }
+      #i3:hover {
+        border-image: linear-gradient(
+            to right,
+            rgb(255, 0, 0),
+            rgb(255, 208, 0)
+          )
+          1;
+        opacity: 1;
+      }
+      #i1:hover {
+        border-image: linear-gradient(
+            to right,
+            rgb(255, 0, 157),
+            rgb(0, 183, 255)
+          )
+          1;
+        opacity: 1;
+      }
+      #i2:hover {
+        border-image: linear-gradient(to right, green, yellow) 1;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body style="background-image: url('black.jpg'); height: 98vh">
+    <div>
+      <h1>Hover Design</h1>
+      <div style="display: flex">
+        <div class="box" id="i1">
+          <img src="bike1.jpg" height="100%" width="100%" />
+        </div>
+        <div class="box" id="i2">
+          <img src="bike2.jpg" height="100%" width="100%" />
+        </div>
+        <div class="box" id="i3">
+          <img src="bike3.jfif" height="100%" width="100%" />
+        </div>
+        <div class="box" id="i4">
+          <img src="bike4.jpg" height="100%" width="100%" />
+        </div>
+      </div>
+    </div> 
+  </body>
 </html>
